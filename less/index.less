@@ -63,8 +63,13 @@ html, body {
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Oswald&display=swap');
 
+//variables
 @main-font:'Noto Sans', sans-serif;
 @heading-font:'Oswald', sans-serif;
+@blueviolet: #8A2BE2;
+@cornblue:#6495ED;
+@indigo:#4B0082;
+@lightgray:#D3D3D3;
 
 //mixins
 .centered () {
@@ -103,7 +108,7 @@ h1 {
 }
 
 h2 , h3 {
-	margin: 20px;
+	margin: 0 20px;
 	font-size: 2rem;
 }
 
@@ -119,7 +124,9 @@ a {
 	color: darkslategrey;
 }
 
-
+.coloring{
+	background-color: @cornblue;
+}
 
 .container {
 	margin: auto;
@@ -132,10 +139,12 @@ a {
 		
 		.navmix();
 		
+		
 		a {
 			padding: 15px;
 			margin: 3px 10px;
 			text-decoration: none;
+			color: @indigo;
 			}
 		}
 	}
@@ -147,10 +156,14 @@ a {
 
 	.top-div{
 
+		.btn{
+			
+		}
 
 		button {
 			padding: 5px 40px;
 			font-size: 1.2rem;
+			background-color:@lightgray ;
 
 		}
 	}
@@ -165,15 +178,24 @@ a {
 			
 
 			.one{
+				padding-top: 5%;
 				width: 45%;
+				background-color: @cornblue;
 				
 			}
 			.two{
+				padding-top: 5%;
 				width: 45%;
+				background-color: @blueviolet;
 				
 			}
 
 		}
+
+	  }
+
+	  .bot-section {
+		padding-top: 5%;
 
 	  }
 

@@ -165,7 +165,7 @@ h1 {
 }
 h2,
 h3 {
-  margin: 20px;
+  margin: 0 20px;
   font-size: 2rem;
 }
 p {
@@ -177,6 +177,9 @@ a {
   text-decoration: none;
   font-size: 1rem;
   color: darkslategrey;
+}
+.coloring {
+  background-color: #6495ED;
 }
 .container {
   margin: auto;
@@ -196,6 +199,7 @@ a {
   padding: 15px;
   margin: 3px 10px;
   text-decoration: none;
+  color: #4B0082;
 }
 .top-section {
   margin-bottom: 10%;
@@ -203,16 +207,24 @@ a {
 .top-section .top-div button {
   padding: 5px 40px;
   font-size: 1.2rem;
+  background-color: #D3D3D3;
 }
 .mid-section .mid-div {
   display: flex;
   justify-content: center;
 }
 .mid-section .mid-div .one {
+  padding-top: 5%;
   width: 45%;
+  background-color: #6495ED;
 }
 .mid-section .mid-div .two {
+  padding-top: 5%;
   width: 45%;
+  background-color: #8A2BE2;
+}
+.bot-section {
+  padding-top: 5%;
 }
 .footer-div {
   display: flex;
