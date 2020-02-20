@@ -54,6 +54,129 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: white;
 }
 
+//my code starts here
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Oswald&display=swap');
+
+@main-font:'Noto Sans', sans-serif;
+@heading-font:'Oswald', sans-serif;
+
+//mixins
+.centered () {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navmix () {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+}
+
+
+
+
+//general styles
+
+body , button {
+
+	font-family: @main-font;
+	font-size: 62.5%;
+
+}
+
+
+h1 , h2 , h3 , h4 {
+
+	font-family: @heading-font ;
+	
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 , h3 {
+	margin: 20px;
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 1.25;
+	margin: 20px ;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: darkslategrey;
+}
+
+
+
+.container {
+	margin: auto;
+	width: 840px;
+
+	header {
+		.centered();
+
+	nav {
+		
+		.navmix();
+		
+		a {
+			padding: 15px;
+			margin: 3px 10px;
+			text-decoration: none;
+			}
+		}
+	}
+}
+
+  .top-section {
+	
+	margin-bottom: 10%;
+
+	.top-div{
+
+
+		button {
+			padding: 5px 40px;
+			font-size: 1.2rem;
+
+		}
+	}
+  }
+
+
+  	.mid-section {
+
+		.mid-div{
+			display: flex;
+			justify-content: center;
+			
+
+			.one{
+				width: 45%;
+				
+			}
+			.two{
+				width: 45%;
+				
+			}
+
+		}
+
+	  }
+
+	  .footer-div {
+		 .centered();
+	  }
